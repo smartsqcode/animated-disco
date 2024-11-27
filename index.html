@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPR TEST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #000; /* Чёрный фон */
+            color: #fff; /* Белый текст */
+        }
+        .dpr-container {
+            text-align: center;
+        }
+        .dpr-value {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #00ff00; /* Зелёный текст */
+        }
+    </style>
+</head>
+<body>
+    <div class="dpr-container">
+        <h1>DPR TEST</h1>
+        <p>Ваше значение DevicePixelRatio:</p>
+        <div class="dpr-value" id="dprValue"></div>
+    </div>
+
+    <script>
+        // Получаем значение DevicePixelRatio и выводим его на страницу
+        const dpr = window.devicePixelRatio;
+        document.getElementById('dprValue').textContent = dpr;
+    </script>
+</body>
+</html>
